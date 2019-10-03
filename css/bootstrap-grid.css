@@ -17,8 +17,8 @@ html {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -43,7 +43,7 @@ html {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1100px;
   }
 }
 
