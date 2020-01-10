@@ -1,0 +1,58 @@
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+img {
+    max-width: 70%;
+}
+
+body {
+    position: relative;
+}
+
+.home__icon {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    &--hover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #E4E4E4;
+        font-size: 34px;
+        color: white;
+        position: relative;
+        z-index: 1;
+
+        &:before {
+            content: '';
+            width: 50px;
+            height: 0;
+            border-radius: 50%;
+            background-color: rgba(229, 191, 171, 0.466);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: ease .5s;
+            z-index: 5;
+
+        }
+
+        &:hover:before {
+            height: 50px;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 991px) {}

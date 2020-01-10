@@ -1,0 +1,25 @@
+.nav {
+
+
+
+    &__link {
+        font-family: 'Public Sans', sans-serif;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+        padding: 5px;
+        font-size: 37px;
+        padding-right: 10px;
+        border-right: 1px solid transparent;
+        transition: ease .3s;
+
+        &:hover {
+            border-right: 4px solid #a97d67bd;
+        }
+    }
+
+    &__item {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}

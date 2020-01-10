@@ -1,0 +1,63 @@
+.history {
+    padding-top: 70px;
+
+    &__desc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px 15px 0;
+    }
+
+    &__title {
+        font-size: 17px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+    }
+
+    &__icon-bg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #dca98ebd;
+    }
+
+    &__icon {
+        font-size: 40px;
+        color: white;
+        font-weight: 300;
+    }
+
+
+
+    &__text {
+        padding-bottom: 25px;
+        line-height: 22px;
+        font-size: 17px;
+    }
+
+    &__time {
+        margin-bottom: 25px;
+        color: white;
+        background-color: #dca98ebd;
+        border-radius: 9px;
+        width: 160px;
+        padding: 5px;
+        font-size: 15px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    &__specialty {
+        padding-bottom: 25px;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 16px;
+    }
+
+
+
+}

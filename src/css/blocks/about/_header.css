@@ -1,0 +1,5 @@
+.header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a97d67), color-stop(#b2846d), color-stop(#bc8b73), color-stop(#c59379), color-stop(#cf9a7f), color-stop(#d6a186), color-stop(#dca98e), color-stop(#e3b095), color-stop(#e9b9a0), color-stop(#eec2ab), color-stop(#f4cbb6), to(#f9d4c1));
+  background-image: -webkit-linear-gradient(top, #a97d67, #b2846d, #bc8b73, #c59379, #cf9a7f, #d6a186, #dca98e, #e3b095, #e9b9a0, #eec2ab, #f4cbb6, #f9d4c1);
+  background-image: -o-linear-gradient(top, #a97d67, #b2846d, #bc8b73, #c59379, #cf9a7f, #d6a186, #dca98e, #e3b095, #e9b9a0, #eec2ab, #f4cbb6, #f9d4c1);
+  background-image: linear-gradient(to bottom, #a97d67, #b2846d, #bc8b73, #c59379, #cf9a7f, #d6a186, #dca98e, #e3b095, #e9b9a0, #eec2ab, #f4cbb6, #f9d4c1); }
