@@ -5641,7 +5641,8 @@ html {
   background-color: white;
   width: 100%;
   color: #4E4C48;
-  font-family: 'Public Sans', sans-serif; }
+  font-family: 'Public Sans', sans-serif;
+  min-height: 100vh; }
   .resume h2 {
     font-weight: 900;
     font-size: 40px;
@@ -5757,6 +5758,195 @@ html {
     font-style: italic;
     font-size: 16px; }
 
+.contact {
+  padding-bottom: 120px;
+  padding-top: 100px;
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  top: -150%;
+  background-color: white;
+  width: 100%;
+  color: #4E4C48;
+  font-family: 'Public Sans', sans-serif;
+  min-height: 100vh; }
+  .contact h2 {
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 47px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 80px; }
+  .contact__plate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 200%;
+    background-color: #F9F5EA;
+    -webkit-box-shadow: 0px 13px 28px -6px #a6a6a6;
+    box-shadow: 0px 13px 28px -6px #a6a6a6; }
+  .contact__icon-bg {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #dca98ebd;
+    -webkit-box-shadow: 0px 13px 30px -6px #a6a6a6;
+    box-shadow: 0px 13px 30px -6px #a6a6a6;
+    -webkit-transition: ease .8s;
+    -o-transition: ease .8s;
+    transition: ease .8s; }
+    .contact__icon-bg:hover {
+      background-color: transparent;
+      border: 1px sopid #dca98ebd; }
+  .contact__icon {
+    font-size: 40px;
+    color: white;
+    font-weight: 300; }
+  .contact__icon-bg:hover .contact__icon {
+    color: #dca98ebd; }
+  .contact__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 15px 15px 0; }
+  .contact__link {
+    text-align: center;
+    line-height: 22px;
+    font-size: 17px;
+    font-weight: 300;
+    color: #4E4C48;
+    padding-top: 20px; }
+
+.works {
+  padding-bottom: 120px;
+  padding-top: 100px;
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  top: -150%;
+  background-color: white;
+  width: 100%;
+  color: #4E4C48;
+  font-family: 'Public Sans', sans-serif;
+  min-height: 100vh; }
+  .works h2 {
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 47px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 80px; }
+  .works__slide {
+    padding: 0 15px; }
+  .works__icon {
+    font-size: 40px;
+    color: #dca98ebd;
+    font-weight: 300;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #dca98ebd;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-transition: ease .8s;
+    -o-transition: ease .8s;
+    transition: ease .8s; }
+    .works__icon:hover {
+      color: white;
+      background-color: #dca98ebd; }
+    .works__icon--left {
+      top: 40%;
+      position: absolute;
+      z-index: 2;
+      left: -7%; }
+    .works__icon--right {
+      top: 40%;
+      position: absolute;
+      z-index: 2;
+      right: -7%; }
+  .works__img {
+    position: relative;
+    overflow: hidden; }
+    .works__img:hover:before {
+      background: -webkit-gradient(linear, left top, left bottom, from(#a97d67bd), color-stop(#b2846dd0), color-stop(#bc8b73bd), color-stop(#c59379bd), color-stop(#cf9a7fbd), color-stop(#d6a186bd), color-stop(#dca98ebd), color-stop(#e3b095bd), color-stop(#e9b9a0bd), color-stop(#eec2abbd), color-stop(#f4cbb6bd), to(#f9d4c1bd));
+      background: -webkit-linear-gradient(top, #a97d67bd, #b2846dd0, #bc8b73bd, #c59379bd, #cf9a7fbd, #d6a186bd, #dca98ebd, #e3b095bd, #e9b9a0bd, #eec2abbd, #f4cbb6bd, #f9d4c1bd);
+      background: -o-linear-gradient(top, #a97d67bd, #b2846dd0, #bc8b73bd, #c59379bd, #cf9a7fbd, #d6a186bd, #dca98ebd, #e3b095bd, #e9b9a0bd, #eec2abbd, #f4cbb6bd, #f9d4c1bd);
+      background: linear-gradient(to bottom, #a97d67bd, #b2846dd0, #bc8b73bd, #c59379bd, #cf9a7fbd, #d6a186bd, #dca98ebd, #e3b095bd, #e9b9a0bd, #eec2abbd, #f4cbb6bd, #f9d4c1bd);
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%; }
+    .works__img:hover .works__link {
+      bottom: 40%;
+      left: 40%;
+      position: absolute;
+      font-size: 40px;
+      color: #dca98ebd;
+      font-weight: 300;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: white;
+      border: 1px solid #dca98ebd;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      cursor: pointer;
+      -webkit-transition: ease .8s;
+      -o-transition: ease .8s;
+      transition: ease .8s; }
+      .works__img:hover .works__link:hover {
+        color: white;
+        background-color: #dca98ebd;
+        border: 1px solid white; }
+  .works img {
+    max-width: 100%; }
+  .works__link {
+    color: transparent;
+    background-color: transparent;
+    border: 1px solid transparent; }
+
 a {
   text-decoration: none;
   cursor: pointer; }
@@ -5771,7 +5961,8 @@ body {
   cursor: pointer;
   position: absolute;
   top: 15px;
-  right: 15px; }
+  right: 15px;
+  z-index: 4; }
   .home__icon--hover {
     display: -webkit-box;
     display: -ms-flexbox;
