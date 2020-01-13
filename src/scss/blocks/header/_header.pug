@@ -2,16 +2,32 @@ mixin header
     .header
         .container-fluid
             .row.no-gutters
-                .col-3
+                .col-12.col-sm-12.col-md-12.col-lg-2
                     .header__nav
                         +nav
-                .col-4
+                .col-12.col-sm-8.order-3.order-md-2.offset-md-1.col-md-6.offset-lg-0.col-lg-4
                     .header__text
-                        h1 Hello! <br> I am Yulia Ivannikova
-                        p a 24 yrs old fashion designer based in LA. I can design beautiful type faces and user interfaces for both digital and print media and love coffee.
+                        img.img.header__foto-sm.d-sm-none(src="./img/foto2.png", alt="", srcset="")
+                        h1 Hello! <br> I am Yulia Ivannikova,
+                        p  junior web developer. I'm trying to find a company where i can develop my programming skills and create amazing things for the web space.
                         .header__link
                             a.header__down(href="./img/img1.png" download) DOWNLOAD CV
-                .col-4
+                .col-12.col-sm-4.order-2.order-md-3.col-md-4.col-lg-4.d-flex.align-items-center
                     .header__img
-                        img.header__foto(src="./img/foto.png", alt="", srcset="")
-                .col-1
+                        img.header__foto.d-none.d-md-block(src="./img/foto.png", alt="", srcset="")
+                        img.img.header__foto-sm.d-none.d-sm-block.d-md-none(src="./img/foto2.png", alt="", srcset="")
+                .col-md-0.col-lg-1
+    .nav__bar.d-sm-none
+        .nav__burger
+            span
+            span
+            span 
+        ul.nav__barlist
+            .d-flex.justify-content-end
+                a.nav__close(href="#close") &times;
+            li.nav__baritem
+                a.nav__barlink(class="resume__on") resume
+            li.nav__baritem
+                a.nav__barlink(class="portfolio__on") portfolio
+            li.nav__baritem
+                a.nav__barlink(class="contact__on") contact

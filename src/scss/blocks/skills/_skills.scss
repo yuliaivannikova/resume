@@ -65,4 +65,17 @@
         font-size: 17px;
     }
 
+    @media screen and (max-width: 1199px) {
+
+        &__title {
+            font-size: 19px;
+        }
+    }
+
+    &__wrapper:before,
+    &__wrapper::after {
+
+        width: 0;
+        height: 0;
+    }
 }

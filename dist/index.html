@@ -17,39 +17,48 @@
     <div class="header">
       <div class="container-fluid">
         <div class="row no-gutters">
-          <div class="col-3">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-2">
             <div class="header__nav">
               <div class="nav">
-                <div class="nav__section d-none d-md-block">  
+                <div class="nav__section d-none d-sm-block">  
                   <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" id="resume">resume</a></li>
-                    <li class="nav__item"><a class="nav__link" id="portfolio">portfolio</a></li>
-                    <li class="nav__item"><a class="nav__link" id="contact">contact</a></li>
+                    <li class="nav__item"><a class="nav__link resume__on">resume</a></li>
+                    <li class="nav__item"><a class="nav__link portfolio__on">portfolio</a></li>
+                    <li class="nav__item"><a class="nav__link contact__on">contact</a></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="header__text">
-              <h1>Hello! <br> I am Yulia Ivannikova</h1>
-              <p>a 24 yrs old fashion designer based in LA. I can design beautiful type faces and user interfaces for both digital and print media and love coffee.</p>
+          <div class="col-12 col-sm-8 order-3 order-md-2 offset-md-1 col-md-6 offset-lg-0 col-lg-4">
+            <div class="header__text"><img class="img header__foto-sm d-sm-none" src="./img/foto2.png" alt="" srcset=""/>
+              <h1>Hello! <br> I am Yulia Ivannikova,</h1>
+              <p> junior web developer. I'm trying to find a company where i can develop my programming skills and create amazing things for the web space.</p>
               <div class="header__link"><a class="header__down" href="./img/img1.png" download="download">DOWNLOAD CV</a></div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="header__img"><img class="header__foto" src="./img/foto.png" alt="" srcset=""/></div>
+          <div class="col-12 col-sm-4 order-2 order-md-3 col-md-4 col-lg-4 d-flex align-items-center">
+            <div class="header__img"><img class="header__foto d-none d-md-block" src="./img/foto.png" alt="" srcset=""/><img class="img header__foto-sm d-none d-sm-block d-md-none" src="./img/foto2.png" alt="" srcset=""/></div>
           </div>
-          <div class="col-1"></div>
+          <div class="col-md-0 col-lg-1"></div>
         </div>
       </div>
     </div>
+    <div class="nav__bar d-sm-none">
+      <div class="nav__burger"><span></span><span></span><span> </span></div>
+      <ul class="nav__barlist">
+        <div class="d-flex justify-content-end"><a class="nav__close" href="#close">&times;</a></div>
+        <li class="nav__baritem"><a class="nav__barlink resume__on">resume</a></li>
+        <li class="nav__baritem"><a class="nav__barlink portfolio__on">portfolio</a></li>
+        <li class="nav__baritem"><a class="nav__barlink contact__on">contact</a></li>
+      </ul>
+    </div>
     <div class="resume">
-      <div class="container">
+      <div class="container-fluid">
         <h2>resume</h2>
         <div class="skills">
           <div class="row">
-            <div class="col-4">
+            <div class="col-12 col-md-4">
               <div class="skills__wrapper">
                 <h3 class="skills__title">design skills  </h3>
                 <div class="skills__plate">
@@ -66,7 +75,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4">
               <div class="skills__wrapper">
                 <h3 class="skills__title">coding skills</h3>
                 <div class="skills__plate">
@@ -89,7 +98,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4">
               <div class="skills__wrapper">
                 <h3 class="skills__title">language skills</h3>
                 <div class="skills__plate">
@@ -109,9 +118,9 @@
           </div>
         </div>
       </div>
-      <div class="container history">
+      <div class="container-fluid history">
         <div class="row">
-          <div class="col-4">
+          <div class="col-12 col-sm-4">
             <div class="history__wrapper">
               <div class="history__desc">
                 <div class="history__icon-bg">
@@ -132,7 +141,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-sm-4">
             <div class="history__wrapper">
               <div class="history__desc">
                 <div class="history__icon-bg">
@@ -153,7 +162,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-sm-4">
             <div class="history__wrapper">
               <div class="history__desc">
                 <div class="history__icon-bg">
@@ -186,25 +195,24 @@
       <div class="container-fluid">
         <h2>contact</h2>
         <div class="row no-gutters">
-          <div class="col-3"></div>
-          <div class="offset-2 col-8">
+          <div class="col-12 offset-lg-2 col-lg-8">
             <div class="contact__plate">
               <div class="row">
-                <div class="col-4">
+                <div class="col-sm-4">
                   <div class="contact__content">
                     <div class="contact__icon-bg">
                       <div class="contact__icon material-icons-phone"></div>
                     </div><a class="contact__link" href="tel:+38 063 952 5084">Phone: +38 063 952 5084 </a>
                   </div>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-4">
                   <div class="contact__content">
                     <div class="contact__icon-bg">
                       <div class="contact__icon material-icons-mail"></div>
                     </div><a class="contact__link" href="mailto:yulia.godyk@gmail.com">Email: yulia.godyk@gmail.com </a>
                   </div>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-4">
                   <div class="contact__content">
                     <div class="contact__icon-bg">
                       <div class="contact__icon material-icons-navigation"></div>
@@ -225,7 +233,7 @@
     </div>
     <div class="works">
       <h2>portfolio</h2>
-      <div class="container"> 
+      <div class="container">
         <div class="works__slider">
           <div class="works__slide">
             <div class="works__img"><img src="./img/img1.png" alt="" srcset=""/><a target="_blank" href="https://yuliaivannikova.github.io/professionals/dist/index.html">

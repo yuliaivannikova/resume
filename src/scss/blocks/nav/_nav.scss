@@ -13,6 +13,7 @@
         border-right: 1px solid transparent;
         transition: ease .3s;
 
+
         &:hover {
             border-right: 4px solid #a97d67bd;
         }
@@ -21,5 +22,134 @@
     &__item {
         margin-top: 30px;
         margin-bottom: 30px;
+    }
+
+    // navigation adaptive
+
+    &__barlist {
+        transition: ease .3s;
+        background-color: white;
+        width: 100%;
+        border: none;
+        position: absolute;
+        height: 100vh;
+        left: 0;
+        top: -250%;
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        padding: 27px 30px 0 30px;
+
+
+        &--active {
+            top: 0;
+            transition: ease .7s;
+        }
+    }
+
+    &__baritem {
+        display: flex;
+        justify-content: center;
+        padding: 5%;
+    }
+
+    &__barlink {
+        display: flex;
+        justify-content: center;
+        color: #4E4C48;
+        font-weight: 300;
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 23px;
+        transition: ease .3s;
+        font-size: 25px;
+        padding: 5px;
+        max-width: max-content;
+
+        &:hover {
+            color: #a97d67bd;
+        }
+    }
+
+    &__burger {
+        cursor: pointer;
+        position: relative;
+        position: absolute;
+        right: 42px;
+        top: 48px;
+        z-index: 2;
+    }
+
+    &__burger span {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        display: block;
+        transition: all 0.8s;
+        position: relative;
+        transition: ease-out 0.5s;
+
+    }
+
+    &__burger:hover span {
+
+        background-color: #a97d67bd;
+    }
+
+
+
+    &__burger span:nth-child(1) {
+        transform: translateY(-6px);
+    }
+
+    &__burger span:nth-child(3) {
+        transform: translateY(6px);
+    }
+
+
+
+    &__close {
+        top: 50px;
+        right: 25px;
+        font-size: 3rem;
+        transition: all 0.2s;
+        transform-origin: 50% 53%;
+        display: block;
+        line-height: 3rem;
+        text-align: center;
+        width: 3rem;
+        height: 3rem;
+        color: #4E4C48;
+        transition: all 0.8s;
+
+
+        &:hover {
+            color: #a97d67bd;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+
+        &__list {
+            display: flex;
+        }
+
+        &__link {
+            font-size: 34px;
+            border: 1px solid transparent;
+
+
+            &:hover {
+                border-right: 1px solid transparent;
+                border-bottom: 4px solid #a97d67bd;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+
+        &__link {
+            font-size: 30px;
+        }
     }
 }
